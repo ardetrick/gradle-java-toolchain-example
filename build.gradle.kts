@@ -54,8 +54,3 @@ tasks.withType<Test> {
     // Prints the console output from tests to the Gradle output - makes it easier to observe.
     testLogging.showStandardStreams = true
 }
-
-tasks.wrapper {
-    distributionType = Wrapper.DistributionType.ALL
-    gradleVersion = "8.1.1"
-}
