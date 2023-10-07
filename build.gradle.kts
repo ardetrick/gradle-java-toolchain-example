@@ -49,6 +49,16 @@ tasks.register<JavaExec>("runOn20") {
     mainClass.set("com.ardetrick.Main")
 }
 
+// Run application on Java 20
+tasks.register<JavaExec>("runOn21") {
+    javaLauncher.set(javaToolchains.launcherFor {
+        languageVersion.set(JavaLanguageVersion.of(21))
+        vendor.set(JvmVendorSpec.AZUL)
+    })
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass.set("com.ardetrick.Main")
+}
+
 tasks.withType<Test> {
     useJUnitPlatform()
     // Prints the console output from tests to the Gradle output - makes it easier to observe.

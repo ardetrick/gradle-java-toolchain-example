@@ -19,3 +19,5 @@ jobs:
       run: ./gradlew run
     - name: run
       run: ./gradlew runOn20
+    - name: run
+      run: ./gradlew runOn21

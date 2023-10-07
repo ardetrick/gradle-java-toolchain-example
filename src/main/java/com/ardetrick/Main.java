@@ -57,8 +57,9 @@ class CompiledWith {
             case 62 -> "18";
             case 63 -> "19";
             case 64 -> "20";
-            // Assumed
             case 65 -> "21";
+            // Assumed
+            case 66 -> "21";
             default -> "unknown";
         };
     }
